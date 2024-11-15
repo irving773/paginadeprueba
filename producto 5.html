@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney Epic Mickey: Rebrushed</title>
+     <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #4caf50;
+            border-radius: 10px;
+            background: rgba(28, 28, 28, 0.85);
+            box-shadow: 0 0 20px rgba(76, 175, 80, 0.5);
+        }
+        .image-container {
+            margin-right: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(76, 175, 80, 0.7);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-shadow: 1px 1px 5px #4caf50;
+        }
+        p, li {
+            font-size: 1.2em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .barcode {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .barcode img {
+            border: 2px solid #4caf50;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(76, 175, 80, 0.7);
+        }
+        .highlight {
+            color: #4caf50;
+        }
+        .btn-regresar {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            width: 150px;
+        }
+        .btn-regresar:hover {
+            background-color: #45a049;
+        }
+    </style>
+  </head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="imagen de Disney.jpg" alt="Disney Epic Mickey: Rebrushed" width="600">
+        </div>
+        <div class="info">
+            <h1>Información del Producto</h1>
+            <p><strong>Disney Epic Mickey: Rebrushed</strong> da vida a la magia de Disney en un vibrante juego de plataformas en 3D. En este vistoso remake, Mickey Mouse se lanza a un viaje épico por el Páramo, un reino plagado de personajes Disney olvidados. En el papel de Mickey, tendrás que adentrarte en un mundo fantástico y, armado con pintura y disolvente, dar forma a tu aventura y al destino de esta dimensión alternativa.</p>
+            <p><strong>Datos del juego:</strong></p>
+            <ul>
+                <li><span style="color: #2ecc71;">Memoria RAM:</span> 8 GB</li>
+                <li><span style="color: #2ecc71;">Sistema Operativo:</span> PS5</li>
+                <li><span style="color: #2ecc71;">Espacio en disco:</span> 28 GB de espacio disponible</li>
+            </ul>
+            <div class="barcode">
+            </div>
+        </div>
+    </div>
+<button class="btn-regresar" onclick="window.history.back()">Regresar al Catálogo</button>
+</body>
+</html>

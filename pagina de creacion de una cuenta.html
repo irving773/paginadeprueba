@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ffcc00;
+            border-radius: 5px;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        input[type="submit"],
+        .create-account {
+            background-color: #ffcc00;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+            display: inline-block;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover,
+        .create-account:hover {
+            background-color: #ff9900;
+        }
+
+        .link {
+            margin-top: 10px;
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="validar.php" method="post">
+        <h2>Inicio de Sesión</h2>
+        <input type="text" placeholder="Usuario" name="usuario" required>
+        <input type="email" placeholder="Correo electrónico" name="correo" required>
+        <input type="password" placeholder="Contraseña" name="contraseña" required>
+        <input type="password" placeholder="Confirmar contraseña" name="confirmar_contraseña" required>
+        <input type="submit" value="Iniciar Sesión">
+        <a href="crear_cuenta.html" class="create-account">Crear Cuenta</a>
+    </form>
+</body>
+
+</html>
